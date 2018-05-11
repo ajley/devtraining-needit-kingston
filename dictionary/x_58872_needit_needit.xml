@@ -10,18 +10,16 @@
                 <element label="Your Department Choice" sequence="3" value="your_choice"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_request_type" dependent_on_field="u_request_type" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string" use_dependent_field="true">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string" use_dependent_field="true">
             <choice>
-                <element dependent_value="Human Resource" label="Human Resources 1" sequence="0" value="hr1"/>
-                <element dependent_value="legal" label="Legal 1" sequence="0" value="Legal 1"/>
-                <element dependent_value="Human Resource" label="Human Resources 2" sequence="1" value="hr2"/>
-                <element dependent_value="legal" label="Legal 2" sequence="1" value="Legal 2"/>
+                <element dependent_value="Human Resource" label="Human Resource 1" sequence="0" value="hr1"/>
+                <element dependent_value="Human Resource" label="Human Resource 2" sequence="1" value="hr2"/>
                 <element label="Facilities 1" sequence="2" value="facilities1"/>
                 <element label="Facilities 2" sequence="3" value="facilities2"/>
-                <element label="Legal 1" sequence="4" value="legal1"/>
-                <element label="Legal 2" sequence="5" value="legal2"/>
-                <element label="Your Department Choice 1" sequence="6" value="your_choice1"/>
-                <element label="Your Department Choice 2" sequence="7" value="your_choice2"/>
+                <element dependent_value="legal" label="Legal 1" sequence="4" value="Legal 1"/>
+                <element dependent_value="legal" label="Legal 2" sequence="5" value="Legal 2"/>
+                <element label="Your Department Choice" sequence="6" value="your_choice1"/>
+                <element label="Your Department Choice" sequence="7" value="your_choice2"/>
             </choice>
         </element>
         <element label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
